@@ -144,6 +144,22 @@ public final class IconPackSettingsFragment extends RadioSettingsFragment {
         pref.setTitle(label);
         pref.setPersistent(false);
         pref.setChecked(isChecked);
+        if (!pkgName.equals(IconDatabase.VALUE_DEFAULT)) {
+            Intent intent = context.getPackageManager().getLaunchIntentForPackage(pkgName);
+            if (intent != null) {
+                pref.setExtraWidgetOnClickListener((v) -> {
+                    context.startActivity(intent);
+                });
+            } else {
+                intent = new Intent("jOS.ThemeEngine.icon.CONFIG");
+                intent.setPackage(pkgName);
+                if (intent != null) {
+                    pref.setExtraWidgetOnClickListener((v) -> {
+                        context.startActivity(intent);
+                    });
+                }
+            }
+        }
         return pref;
     }
 
