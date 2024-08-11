@@ -52,6 +52,12 @@
             android:persistent="true"
             launcher:iconSpaceReserved="false" />
 
+        <SwitchPreference
+            android:key="pref_smartspace"
+            android:title="@string/smartspace_pref_title"
+            android:summary="@string/smartspace_pref_summary"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
 </androidx.preference.PreferenceScreen>
