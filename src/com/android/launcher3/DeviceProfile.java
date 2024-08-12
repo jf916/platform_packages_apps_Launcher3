@@ -345,6 +345,8 @@ public class DeviceProfile {
                 && inv.workspaceCellSpecsId != INVALID_RESOURCE_HANDLE
                 && inv.allAppsCellSpecsId != INVALID_RESOURCE_HANDLE;
 
+        SharedPreferences prefs = LauncherPrefs.getPrefs(context)
+
         mIsScalableGrid = inv.isScalable && !isVerticalBarLayout() && !isMultiWindowMode;
         // Determine device posture.
         mInfo = info;
