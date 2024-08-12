@@ -867,7 +867,7 @@ public final class Utilities {
 
     public static void setWorkspaceEdit(Context context) {
         SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
-        prefs.edit().putBoolean(InvariantDeviceProfile.KEY_WORKSPACE_LOCK, !isWorkspaceEditAllowed(context))apply();
+        prefs.edit().putBoolean(InvariantDeviceProfile.KEY_WORKSPACE_LOCK, !isWorkspaceEditAllowed(context)).apply();
     }
 
     /**
