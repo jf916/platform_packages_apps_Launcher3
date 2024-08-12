@@ -80,7 +80,7 @@
         android:label="@string/derived_app_name"
         android:largeHeap="@bool/config_largeHeap"
         android:restoreAnyVersion="true"
-        tools:replace="android:icon"
+        tools:replace="android:icon,android:name"
         android:supportsRtl="true" >
 
         <!-- Intent received when a session is committed -->
