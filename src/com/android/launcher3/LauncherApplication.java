@@ -16,12 +16,12 @@
  */
 package com.android.launcher3;
 
-import jOS.Core.jSDKCoreApp;
+import jOS.Core.jLIBCoreApp;
 
 /**
  * Main application class for Launcher
  */
-public class LauncherApplication extends jSDKCoreApp {
+public class LauncherApplication extends jLIBCoreApp {
 
     @Override
     public void onCreate() {
