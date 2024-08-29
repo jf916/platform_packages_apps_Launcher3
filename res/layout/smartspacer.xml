@@ -9,6 +9,8 @@
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/smartspace_card_pager"
         android:layout_width="match_parent"
+        android:layout_height="@dimen/enhanced_smartspace_height"
+        android:layout_marginBottom="@dimen/smartspace_page_margin_16"
         android:layout_gravity="center" />
 
     <com.kieronquinn.app.smartspacer.sdk.client.views.PageIndicator
