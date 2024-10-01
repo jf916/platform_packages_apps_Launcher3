@@ -182,7 +182,7 @@ android_library {
         "SettingsLib",
         "view_capture",
         "animationlib",
-        "j.SDK",
+        "j.Lib",
         "SmartspacerClient"
     ],
     manifest: "AndroidManifest-common.xml",
