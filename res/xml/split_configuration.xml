@@ -7,8 +7,8 @@
         window:splitLayoutDirection="locale"
         window:splitMinWidthDp="@integer/min_width_split"
         window:splitMaxAspectRatioInPortrait="alwaysAllow"
-        window:finishPrimaryWithSecondary="never"
-        window:finishSecondaryWithPrimary="always"
+        window:finishPrimaryWithSecondary="false"
+        window:finishSecondaryWithPrimary="true"
         window:clearTop="false">
         <SplitPairFilter
             window:primaryActivityName="com.android.launcher3.settings.SettingsActivity"
