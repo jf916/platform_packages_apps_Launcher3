@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2023 The Android Open Source Project
+ *               2024 ._______166
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,12 +16,12 @@
  */
 package com.android.launcher3;
 
-import android.app.Application;
+import jOS.Core.jLIBCoreApp;
 
 /**
  * Main application class for Launcher
  */
-public class LauncherApplication extends Application {
+public class LauncherApplication extends jLIBCoreApp {
 
     @Override
     public void onCreate() {
